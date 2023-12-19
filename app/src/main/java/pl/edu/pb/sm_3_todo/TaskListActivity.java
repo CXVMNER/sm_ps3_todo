@@ -1,13 +1,15 @@
 package pl.edu.pb.sm_3_todo;
 
-import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
-public class TaskListActivity extends AppCompatActivity {
+import android.os.Bundle;
+
+public class TaskListActivity extends SingleFragmentActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected Fragment createFragment() {
+        return new TaskListFragment();
     }
 }

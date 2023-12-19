@@ -2,8 +2,6 @@ package pl.edu.pb.sm_3_todo;
 
 import java.util.Date;
 import java.util.UUID;
-import java.lang.*;
-
 
     public class Task {
         private UUID id;
@@ -14,5 +12,28 @@ import java.lang.*;
         public Task() {
             id = UUID.randomUUID();
             date = new Date();
+        }
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public Date getDate() {
+            return date;
+        }
+
+        public boolean isDone() {
+            return done;
+        }
+
+        public void setDone(boolean done) {
+            this.done = done;
+        }
+
+        public UUID getId() {
+            return id;
+        }
+
+        public String getName() {
+            return name;
         }
     }
